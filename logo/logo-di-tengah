@@ -1,3 +1,20 @@
+------
+lits property yang di gunakan 😊😊HTML
+- <div class="">     - <span class="">
+- <svg width="">
+- <div>
+
+-------------
+
+List porperty yang digunakan 😊😊CSS
+- Variable sintaks --nama-variabel
+: root 
+- display: ;           - align-items: ;   - margin-bottom: ;
+- justify-content: ;   - gap: ;           - flex-shrink: ;
+- font-size: ;         - font-weight: ;   - color: ;
+- letter-spacing: ; 
+---------
+
 index.html
 <body>
     <div class="logo">
