@@ -1,0 +1,61 @@
+index.html
+<body>
+    <div class="logo">
+        <!-- Logo SVG -->
+        <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 4L10 22L16 10L22 22L30 4" stroke="#3ddc84" stroke-width="3.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+        </svg>
+        <!-- Logo Text -->
+        <span class="logo-text">Wisecrypto</span>
+    </div>
+</body>
+------
+lits property yang di gunakan 😊😊HTML
+- <div class="">     - <span class="">
+- <svg width="">
+- <div>
+
+-------------
+style.css
+:root {
+    --text: #1a1a1a;
+}
+/* buat variabel warna untuk teks agar mudah diubah nanti jika ingin ganti tema */
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 36px;
+}
+/* buat logo dan nama aplikasi di bagian atas halaman utama */
+
+.logo svg {
+    flex-shrink: 0;
+}
+/* buat logo agar tidak mengecil saat halaman di-resize */
+
+.logo-text {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -.4px;
+}
+/* buat nama aplikasi dengan ukuran font yang lebih besar dan tebal, serta warna yang diambil dari variabel --text */
+
+--------
+List porperty yang digunakan 😊😊CSS
+- Variable sintaks --nama-variabel
+: root 
+- display: ;           - align-items: ;   - margin-bottom: ;
+- justify-content: ;   - gap: ;           - flex-shrink: ;
+- font-size: ;         - font-weight: ;   - color: ;
+- letter-spacing: ; 
+---------
+
+
+
+
+
