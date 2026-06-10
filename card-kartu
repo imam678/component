@@ -1,0 +1,74 @@
+------
+lits property html
+- <div class>
+
+-------
+
+lits property style.css
+- *,                - font-family: ;        - justify-content: ;
+*::before,          - background: ;         - border-radius: ;
+*::after            - min-height: ;         - box-shadow: ;
+- box-sizing: ;     - display: ;            - width: ;
+- margin: ;         - align-items: ;        - padding: 48px 36px 40px;
+- padding: ;        - padding: 24px 16px;   - :root 
+
+------
+
+index.html
+<body>
+    <div class="card">
+    </div>
+</body>
+------
+lits property html
+- <div class>
+
+------
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Ini adalah aturan reset dasar yang sering dipakai di awal file CSS — tujuannya menghapus gaya bawaan browser agar kamu punya kendali penuh atas tampilan halaman, tanpa ukuran atau jarak yang muncul secara tidak sengaja.*/
+
+body {
+    font-family: 'inter', sans-serif;
+    background: var(--bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 24px 16px;
+    justify-content: center;
+}
+/*Aturan ini mengatur gaya untuk elemen body, yaitu bagian utama dari halaman. Kita menggunkan font 'inter' yang sudah kita impor dari Google Fonts, memberikan warna latar belakang yang diambil dari variabel --bg, memastikan tinggi minimum halaman adalah 100% dari Viewport Height (untuk memastikan halaman selalu memenuhi layar), dan menggunakan flexbox untuk menata konten di tengah secara vertikal. padding juga di tambahkan untuk memberikan ruang di sekitar konten agar tidak terlalu mepet dengan tapi halaman.*/
+
+.card {
+    background: var(--card);
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    padding: 48px 36px 40px;
+}
+:root {
+    --text: #1a1a1a;
+    --bg: #f0f0f0;
+    --card: #ffffff;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+/* buat variabel warna untuk teks agar mudah diubah nanti jika ingin ganti tema */
+-------
+lits property style.css
+- *,                - font-family: ;        - justify-content: ;
+*::before,          - background: ;         - border-radius: ;
+*::after            - min-height: ;         - box-shadow: ;
+- box-sizing: ;     - display: ;            - width: ;
+- margin: ;         - align-items: ;        - padding: 48px 36px 40px;
+- padding: ;        - padding: 24px 16px;   - :root 
+
+------
+
+
+
