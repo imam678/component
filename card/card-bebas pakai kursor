@@ -1,0 +1,68 @@
+kartu oranye kamu bisa digeser bebas pakai kursor/ sentuhan
+
+
+index.html
+<body>
+    <div class="card" id="card"></div>
+
+    <script>
+        const card = document.getElementById('card');
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        // Mulai geser saat diklik
+        card.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            // Hitung selisih posisi klik dengan pojok kartu
+            offsetX = e.clientX - card.getBoundingClientRect().left;
+            offsetY = e.clientY - card.getBoundingClientRect().top;
+            card.style.transform = 'none'; // Hapus transform awal agar posisi akurat
+        });
+
+        // Gerakkan kartu saat kursor bergerak
+        document.addEventListener('mousemove', (e) => {
+            if (!isDragging) return;
+            let x = e.clientX - offsetX;
+            let y = e.clientY - offsetY;
+            // Terapkan posisi baru
+            card.style.left = `${x}px`;
+            card.style.top = `${y}px`;
+        });
+
+        // Berhenti geser saat lepas klik
+        document.addEventListener('mouseup', () => {
+            isDragging = false;
+        });
+    </script>
+</body>
+
+
+
+
+
+
+styel.css
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: rgba(147, 147, 202, 0.467);
+    position: relative;
+    overflow: auto;
+}
+
+.card {
+    position: absolute;
+    width: 400px;
+    height: 100px;
+    background-color: hsl(180, 100%, 50%);
+    border-radius: 16px;
+    cursor: grab;
+    user-select: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.card:active {
+    cursor: grabbing;
+}
